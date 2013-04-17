@@ -1,0 +1,32 @@
+{
+    "name": "siciarek/getresponse-api-bundle",
+    "type": "symfony-bundle",
+    "description": "Symfony2 Bundle for GetResponse Api support",
+    "keywords": [
+        "getresponse",
+        "api",
+        "mailing",
+        "autoresponder"
+    ],
+    "homepage": "http://github.com/siciarek/getresponse-api-bundle.git",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jacek Siciarek",
+            "email": "siciarek@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.2"
+    },
+    "require-dev": {
+
+    },
+    "autoload": {
+        "psr-0": {
+            "Siciarek\\GetResponse\\ApiBundle": ""
+        }
+    },
+    "minimum-stability": "dev",
+    "target-dir": "Siciarek/GetResponse/ApiBundle"
+}
