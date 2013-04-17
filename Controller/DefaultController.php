@@ -18,7 +18,7 @@ class DefaultController extends Controller
     {
         $api = $this->container->get("getresponse.api");
 
-        $output = prin_r(array(
+        $output = print_r(array(
             "campaign" => $api->getCampaign(),
             "contacts" => $api->getContacts($page, $page_size),
         ), true);
