@@ -1,4 +1,4 @@
-getresponse-api
-===============
+GetResponse API Bundle
+======================
 
-Symfony2 Bundle for GetResponse Api support
+Symfony2 Bundle for GetResponse API support
