@@ -18,21 +18,11 @@ class DefaultController extends Controller
     {
         $api = $this->container->get("getresponse.api");
 
-        $contacts = array(
-            array(
-                "name" => "Łukasz Łukojć",
-                "email" => "l.lukojc@sescom.pl",
-            ),
-            array(
-                "name" => "Dominik Dziąg",
-                "email" => "d.dziag@sescom.pl",
-            ),
-        );
+        $output = prin_r(array(
+            "campaign" => $api->getCampaign(),
+            "contacts" => $api->getContacts($page, $page_size),
+        ), true);
 
-        $result = $api->getContacts($page, $page_size);
-
-        $output = print_r(array($api->getContactsCount(), count($result), $page, $page_size, $result), true);
-//        $output = print_r($api->getCampaign(), true);
 
         return array(
             "campaign" => $output,
