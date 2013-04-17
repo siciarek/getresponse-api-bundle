@@ -24,9 +24,9 @@
     },
     "autoload": {
         "psr-0": {
-            "Siciarek\\GetResponse\\ApiBundle": ""
+            "GetResponse\\ApiBundle": ""
         }
     },
     "minimum-stability": "dev",
-    "target-dir": "Siciarek/GetResponse/ApiBundle"
+    "target-dir": "GetResponse/ApiBundle"
 }
