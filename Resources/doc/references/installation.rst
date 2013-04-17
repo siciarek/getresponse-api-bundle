@@ -36,7 +36,7 @@ You can fill config literally in `app/config/config.yml`:
         key: 1a109b7777333331065413755460
         campaign: my_campaign
 
-but more convenient is adding values into `app/config/parameters.yml`
+but more convinient is adding values into `app/config/parameters.yml`
 
 .. code-block:: yaml
 
