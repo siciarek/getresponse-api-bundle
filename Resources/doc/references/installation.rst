@@ -9,7 +9,7 @@ Add to `/app/AppKernel.php`
 .. code-block:: php
 
     $bundles = array(
-        new GetResponse\ApiBundle\GetResponseBundle()
+        new GetResponse\ApiBundle\GetResponseApiBundle()
     );
 
 Routing
@@ -19,8 +19,8 @@ Add to `app/config/routing.yml`
 
 .. code-block:: yaml
 
-    get_response:
-        resource: "@GetResponseBundle/Controller/"
+    get_response_api:
+        resource: "@GetResponseApiBundle/Controller/"
         type:     annotation
         prefix:   /
 
@@ -31,7 +31,7 @@ You can fill config literally in `app/config/config.yml`:
 
 .. code-block:: yaml
 
-    get_response:
+    get_response_api:
         url: http://api2.getresponse.com
         key: 1a109b7777333331065413755460
         campaign: my_campaign
@@ -49,7 +49,7 @@ and then use parameter values in `app/config/config.yml`
 
 .. code-block:: yaml
 
-    get_response:
+    get_response_api:
         url: %get_response_url%
         key: %get_response_key%
         campaign: %get_response_campaign%
